@@ -14,6 +14,8 @@ npx cap sync
 <docgen-index>
 
 * [`reportEvent(...)`](#reportevent)
+* [`reportRevenue(...)`](#reportrevenue)
+* [Interfaces](#interfaces)
 
 </docgen-index>
 
@@ -23,13 +25,48 @@ npx cap sync
 ### reportEvent(...)
 
 ```typescript
-reportEvent(options: { eventName: string; eventParameters: string; }) => void
+reportEvent(options: ReportEventOptions) => void
 ```
 
-| Param         | Type                                                         |
-| ------------- | ------------------------------------------------------------ |
-| **`options`** | <code>{ eventName: string; eventParameters: string; }</code> |
+| Param         | Type                                                              |
+| ------------- | ----------------------------------------------------------------- |
+| **`options`** | <code><a href="#reporteventoptions">ReportEventOptions</a></code> |
 
 --------------------
+
+
+### reportRevenue(...)
+
+```typescript
+reportRevenue(options: ReportRevenueOptions) => void
+```
+
+| Param         | Type                                                                  |
+| ------------- | --------------------------------------------------------------------- |
+| **`options`** | <code><a href="#reportrevenueoptions">ReportRevenueOptions</a></code> |
+
+--------------------
+
+
+### Interfaces
+
+
+#### ReportEventOptions
+
+| Prop                  | Type                |
+| --------------------- | ------------------- |
+| **`eventName`**       | <code>string</code> |
+| **`eventParameters`** | <code>string</code> |
+
+
+#### ReportRevenueOptions
+
+| Prop               | Type                |
+| ------------------ | ------------------- |
+| **`productId`**    | <code>string</code> |
+| **`quantity`**     | <code>number</code> |
+| **`price`**        | <code>number</code> |
+| **`currencyCode`** | <code>string</code> |
+| **`payload`**      | <code>string</code> |
 
 </docgen-api>

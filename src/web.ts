@@ -1,10 +1,19 @@
 import { WebPlugin } from '@capacitor/core';
 
-import type { YandexMetrikaPlugin } from './definitions';
+import type {
+  ReportEventOptions,
+  ReportRevenueOptions,
+  YandexMetrikaPlugin,
+} from './definitions';
 
 export class YandexMetrikaWeb extends WebPlugin implements YandexMetrikaPlugin {
-  reportEvent(options: { eventName: string; eventParameters: string }) {
+  reportEvent(options: ReportEventOptions) {
     console.log('reportEvent', options)
+    throw this.unimplemented('Not implemented on web.');
+  }
+
+  reportRevenue(options: ReportRevenueOptions) {
+    console.log('reportRevenue', options)
     throw this.unimplemented('Not implemented on web.');
   }
 }

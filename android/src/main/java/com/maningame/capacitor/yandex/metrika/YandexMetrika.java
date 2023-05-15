@@ -1,6 +1,7 @@
 package com.maningame.capacitor.yandex.metrika;
 
 import android.content.Context;
+import android.util.Log;
 
 import com.yandex.metrica.Revenue;
 import com.yandex.metrica.YandexMetrica;
@@ -22,7 +23,7 @@ public class YandexMetrika {
     }
 
     public void reportRevenue(String productId, Integer quantity, Float price, String currencyCode, String payload) {
-        long base = 10^6;
+        long base = (long) Math.pow(10, 6);
         long priceMicros = (long) (price * base);
 
         Revenue revenue = Revenue.newBuilderWithMicros(priceMicros, Currency.getInstance(currencyCode))

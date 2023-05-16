@@ -15,6 +15,7 @@ npx cap sync
 
 * [`reportEvent(...)`](#reportevent)
 * [`reportRevenue(...)`](#reportrevenue)
+* [`sendEventsBuffer()`](#sendeventsbuffer)
 * [Interfaces](#interfaces)
 
 </docgen-index>
@@ -44,6 +45,15 @@ reportRevenue(options: ReportRevenueOptions) => void
 | Param         | Type                                                                  |
 | ------------- | --------------------------------------------------------------------- |
 | **`options`** | <code><a href="#reportrevenueoptions">ReportRevenueOptions</a></code> |
+
+--------------------
+
+
+### sendEventsBuffer()
+
+```typescript
+sendEventsBuffer() => void
+```
 
 --------------------
 

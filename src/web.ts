@@ -16,4 +16,9 @@ export class YandexMetrikaWeb extends WebPlugin implements YandexMetrikaPlugin {
     console.log('reportRevenue', options)
     throw this.unimplemented('Not implemented on web.');
   }
+
+  sendEventsBuffer() {
+    console.log('sendEventsBuffer')
+    throw this.unimplemented('Not implemented on web.');
+  }
 }

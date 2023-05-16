@@ -38,4 +38,8 @@ public class YandexMetrika {
             YandexMetrica.getReporter(context, config.getApiKey()).reportRevenue(revenue);
         }
     }
+
+    public void sendEventsBuffer() {
+        YandexMetrica.sendEventsBuffer();
+    }
 }

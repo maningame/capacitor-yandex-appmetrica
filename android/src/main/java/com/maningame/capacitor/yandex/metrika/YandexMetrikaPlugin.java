@@ -39,6 +39,11 @@ public class YandexMetrikaPlugin extends Plugin {
         yandexMetrika.reportRevenue(productId, quantity, price, currencyCode, payload);
     }
 
+    @PluginMethod
+    public void sendEventsBuffer() {
+        yandexMetrika.sendEventsBuffer();
+    }
+
     private YandexMetrikaConfig getYandexMetrikaConfig() {
         YandexMetrikaConfig config = new YandexMetrikaConfig();
 

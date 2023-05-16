@@ -25,4 +25,6 @@ export interface YandexMetrikaPlugin {
   reportEvent(options: ReportEventOptions): void;
 
   reportRevenue(options: ReportRevenueOptions): void;
+
+  sendEventsBuffer(): void;
 }

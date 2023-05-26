@@ -1,0 +1,144 @@
+{
+  "api": {
+    "name": "YandexMetrikaPlugin",
+    "slug": "yandexmetrikaplugin",
+    "docs": "",
+    "tags": [],
+    "methods": [
+      {
+        "name": "reportEvent",
+        "signature": "(options: ReportEventOptions) => void",
+        "parameters": [
+          {
+            "name": "options",
+            "docs": "",
+            "type": "ReportEventOptions"
+          }
+        ],
+        "returns": "void",
+        "tags": [],
+        "docs": "",
+        "complexTypes": [
+          "ReportEventOptions"
+        ],
+        "slug": "reportevent"
+      },
+      {
+        "name": "reportRevenue",
+        "signature": "(options: ReportRevenueOptions) => void",
+        "parameters": [
+          {
+            "name": "options",
+            "docs": "",
+            "type": "ReportRevenueOptions"
+          }
+        ],
+        "returns": "void",
+        "tags": [],
+        "docs": "",
+        "complexTypes": [
+          "ReportRevenueOptions"
+        ],
+        "slug": "reportrevenue"
+      },
+      {
+        "name": "sendEventsBuffer",
+        "signature": "() => void",
+        "parameters": [],
+        "returns": "void",
+        "tags": [],
+        "docs": "",
+        "complexTypes": [],
+        "slug": "sendeventsbuffer"
+      }
+    ],
+    "properties": []
+  },
+  "interfaces": [
+    {
+      "name": "ReportEventOptions",
+      "slug": "reporteventoptions",
+      "docs": "",
+      "tags": [],
+      "methods": [],
+      "properties": [
+        {
+          "name": "eventName",
+          "tags": [],
+          "docs": "",
+          "complexTypes": [],
+          "type": "string"
+        },
+        {
+          "name": "eventParameters",
+          "tags": [],
+          "docs": "",
+          "complexTypes": [],
+          "type": "string"
+        }
+      ]
+    },
+    {
+      "name": "ReportRevenueOptions",
+      "slug": "reportrevenueoptions",
+      "docs": "",
+      "tags": [],
+      "methods": [],
+      "properties": [
+        {
+          "name": "productId",
+          "tags": [],
+          "docs": "",
+          "complexTypes": [],
+          "type": "string"
+        },
+        {
+          "name": "quantity",
+          "tags": [],
+          "docs": "",
+          "complexTypes": [],
+          "type": "number"
+        },
+        {
+          "name": "price",
+          "tags": [],
+          "docs": "",
+          "complexTypes": [],
+          "type": "number"
+        },
+        {
+          "name": "currencyCode",
+          "tags": [],
+          "docs": "",
+          "complexTypes": [],
+          "type": "string"
+        },
+        {
+          "name": "payload",
+          "tags": [],
+          "docs": "",
+          "complexTypes": [],
+          "type": "string"
+        }
+      ]
+    }
+  ],
+  "enums": [],
+  "typeAliases": [],
+  "pluginConfigs": [
+    {
+      "name": "YandexMetrika",
+      "slug": "yandexmetrika",
+      "properties": [
+        {
+          "name": "apiKey",
+          "tags": [],
+          "docs": "",
+          "complexTypes": [],
+          "type": "string | undefined"
+        }
+      ],
+      "docs": ""
+    }
+  ]
+}

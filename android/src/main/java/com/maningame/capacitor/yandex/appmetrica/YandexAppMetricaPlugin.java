@@ -1,4 +1,4 @@
-package com.maningame.capacitor.yandex.metrika;
+package com.maningame.capacitor.yandex.appmetrica;
 
 import android.content.Context;
 
@@ -8,16 +8,16 @@ import com.getcapacitor.PluginCall;
 import com.getcapacitor.PluginMethod;
 import com.getcapacitor.annotation.CapacitorPlugin;
 
-@CapacitorPlugin(name = "YandexMetrika")
-public class YandexMetrikaPlugin extends Plugin {
+@CapacitorPlugin(name = "YandexAppMetrica")
+public class YandexAppMetricaPlugin extends Plugin {
 
-    private YandexMetrika yandexMetrika;
+    private YandexAppMetrica yandexAppMetrica;
 
     public void load() {
-        YandexMetrikaConfig config = getYandexMetrikaConfig();
+        YandexAppMetricaConfig config = getYandexAppMetricaConfig();
         Context ctx = this.getActivity().getApplicationContext();
 
-        yandexMetrika = new YandexMetrika(ctx, config);
+        yandexAppMetrica = new YandexAppMetrica(ctx, config);
     }
 
     @PluginMethod
@@ -25,7 +25,7 @@ public class YandexMetrikaPlugin extends Plugin {
         String eventName = call.getString("eventName");
         String eventParameters = call.getString("eventParameters");
 
-        yandexMetrika.reportEvent(eventName, eventParameters);
+        yandexAppMetrica.reportEvent(eventName, eventParameters);
     }
 
     @PluginMethod
@@ -36,16 +36,16 @@ public class YandexMetrikaPlugin extends Plugin {
         String currencyCode = call.getString("currencyCode");
         String payload = call.getString("payload");
 
-        yandexMetrika.reportRevenue(productId, quantity, price, currencyCode, payload);
+        yandexAppMetrica.reportRevenue(productId, quantity, price, currencyCode, payload);
     }
 
     @PluginMethod
     public void sendEventsBuffer() {
-        yandexMetrika.sendEventsBuffer();
+        yandexAppMetrica.sendEventsBuffer();
     }
 
-    private YandexMetrikaConfig getYandexMetrikaConfig() {
-        YandexMetrikaConfig config = new YandexMetrikaConfig();
+    private YandexAppMetricaConfig getYandexAppMetricaConfig() {
+        YandexAppMetricaConfig config = new YandexAppMetricaConfig();
 
         String apiKey = getConfig().getString("apiKey", "");
         config.setApiKey(apiKey);

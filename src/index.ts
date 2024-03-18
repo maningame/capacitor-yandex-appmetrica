@@ -1,10 +1,10 @@
 import { registerPlugin } from '@capacitor/core';
 
-import type { YandexMetrikaPlugin } from './definitions';
+import type { YandexAppMetricaPlugin } from './definitions';
 
-const YandexMetrika = registerPlugin<YandexMetrikaPlugin>('YandexMetrika', {
-  web: () => import('./web').then(m => new m.YandexMetrikaWeb()),
+const YandexAppMetrica = registerPlugin<YandexAppMetricaPlugin>('YandexAppMetrica', {
+  web: () => import('./web').then(m => new m.YandexAppMetricaWeb()),
 });
 
 export * from './definitions';
-export { YandexMetrika };
+export { YandexAppMetrica };

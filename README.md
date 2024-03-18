@@ -1,11 +1,11 @@
-# capacitor-yandex-metrika
+# capacitor-yandex-appmetrica
 
-Capacitor Yandex Metrika Plugin
+Capacitor Yandex AppMetrica Plugin
 
 ## Install
 
 ```bash
-npm install capacitor-yandex-metrika
+npm install capacitor-yandex-appmetrica
 npx cap sync
 ```
 

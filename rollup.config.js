@@ -4,7 +4,7 @@ export default {
     {
       file: 'dist/plugin.js',
       format: 'iife',
-      name: 'capacitorYandexMetrika',
+      name: 'capacitorYandexAppMetrica',
       globals: {
         '@capacitor/core': 'capacitorExports',
       },

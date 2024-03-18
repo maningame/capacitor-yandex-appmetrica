@@ -1,11 +1,11 @@
-var capacitorYandexMetrika = (function (exports, core) {
+var capacitorYandexAppMetrica = (function (exports, core) {
     'use strict';
 
-    const YandexMetrika = core.registerPlugin('YandexMetrika', {
-        web: () => Promise.resolve().then(function () { return web; }).then(m => new m.YandexMetrikaWeb()),
+    const YandexAppMetrica = core.registerPlugin('YandexAppMetrica', {
+        web: () => Promise.resolve().then(function () { return web; }).then(m => new m.YandexAppMetricaWeb()),
     });
 
-    class YandexMetrikaWeb extends core.WebPlugin {
+    class YandexAppMetricaWeb extends core.WebPlugin {
         reportEvent(options) {
             console.log('reportEvent', options);
             throw this.unimplemented('Not implemented on web.');
@@ -22,10 +22,10 @@ var capacitorYandexMetrika = (function (exports, core) {
 
     var web = /*#__PURE__*/Object.freeze({
         __proto__: null,
-        YandexMetrikaWeb: YandexMetrikaWeb
+        YandexAppMetricaWeb: YandexAppMetricaWeb
     });
 
-    exports.YandexMetrika = YandexMetrika;
+    exports.YandexAppMetrica = YandexAppMetrica;
 
     Object.defineProperty(exports, '__esModule', { value: true });
 

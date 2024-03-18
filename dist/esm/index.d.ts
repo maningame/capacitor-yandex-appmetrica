@@ -1,4 +1,4 @@
-import type { YandexMetrikaPlugin } from './definitions';
-declare const YandexMetrika: YandexMetrikaPlugin;
+import type { YandexAppMetricaPlugin } from './definitions';
+declare const YandexAppMetrica: YandexAppMetricaPlugin;
 export * from './definitions';
-export { YandexMetrika };
+export { YandexAppMetrica };

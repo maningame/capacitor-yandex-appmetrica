@@ -1,7 +1,7 @@
 {
   "api": {
-    "name": "YandexMetrikaPlugin",
-    "slug": "yandexmetrikaplugin",
+    "name": "YandexAppMetricaPlugin",
+    "slug": "yandexappmetricaplugin",
     "docs": "",
     "tags": [],
     "methods": [
@@ -127,8 +127,8 @@
   "typeAliases": [],
   "pluginConfigs": [
     {
-      "name": "YandexMetrika",
-      "slug": "yandexmetrika",
+      "name": "YandexAppMetrica",
+      "slug": "yandexappmetrica",
       "properties": [
         {
           "name": "apiKey",

@@ -1,7 +1,7 @@
 {
-  "name": "capacitor-yandex-metrika",
-  "version": "0.0.1",
-  "description": "Capacitor Yandex Metrika Plugin",
+  "name": "capacitor-yandex-appmetrica",
+  "version": "1.0.0",
+  "description": "Capacitor Yandex AppMetrica Plugin",
   "main": "dist/plugin.cjs.js",
   "module": "dist/esm/index.js",
   "types": "dist/esm/index.d.ts",
@@ -15,10 +15,10 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/maningame/capacitor-yandex-metrika.git"
+    "url": "git+https://github.com/maningame/capacitor-yandex-appmetrica.git"
   },
   "bugs": {
-    "url": "https://github.com/maningame/capacitor-yandex-metrika/issues"
+    "url": "https://github.com/maningame/capacitor-yandex-appmetrica/issues"
   },
   "keywords": [
     "capacitor",
@@ -33,7 +33,7 @@
     "fmt": "npm run eslint -- --fix && npm run prettier -- --write && npm run swiftlint -- --fix --format",
     "eslint": "eslint . --ext ts",
     "prettier": "prettier \"**/*.{css,html,ts,js,java}\"",
-    "docgen": "docgen --api YandexMetrikaPlugin --output-readme README.md --output-json dist/docs.json",
+    "docgen": "docgen --api YandexAppMetricaPlugin --output-readme README.md --output-json dist/docs.json",
     "build": "npm run clean && npm run docgen && tsc && rollup -c rollup.config.js",
     "clean": "rimraf ./dist",
     "watch": "tsc --watch",

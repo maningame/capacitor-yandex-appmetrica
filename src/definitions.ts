@@ -2,7 +2,7 @@
 
 declare module '@capacitor/cli' {
   export interface PluginsConfig {
-    YandexMetrika?: {
+    YandexAppMetrica?: {
       apiKey?: string;
     }
   }
@@ -21,7 +21,7 @@ export interface ReportRevenueOptions {
   payload: string
 }
 
-export interface YandexMetrikaPlugin {
+export interface YandexAppMetricaPlugin {
   reportEvent(options: ReportEventOptions): void;
 
   reportRevenue(options: ReportRevenueOptions): void;

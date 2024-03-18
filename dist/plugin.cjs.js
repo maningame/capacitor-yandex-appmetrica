@@ -4,11 +4,11 @@ Object.defineProperty(exports, '__esModule', { value: true });
 
 var core = require('@capacitor/core');
 
-const YandexMetrika = core.registerPlugin('YandexMetrika', {
-    web: () => Promise.resolve().then(function () { return web; }).then(m => new m.YandexMetrikaWeb()),
+const YandexAppMetrica = core.registerPlugin('YandexAppMetrica', {
+    web: () => Promise.resolve().then(function () { return web; }).then(m => new m.YandexAppMetricaWeb()),
 });
 
-class YandexMetrikaWeb extends core.WebPlugin {
+class YandexAppMetricaWeb extends core.WebPlugin {
     reportEvent(options) {
         console.log('reportEvent', options);
         throw this.unimplemented('Not implemented on web.');
@@ -25,8 +25,8 @@ class YandexMetrikaWeb extends core.WebPlugin {
 
 var web = /*#__PURE__*/Object.freeze({
     __proto__: null,
-    YandexMetrikaWeb: YandexMetrikaWeb
+    YandexAppMetricaWeb: YandexAppMetricaWeb
 });
 
-exports.YandexMetrika = YandexMetrika;
+exports.YandexAppMetrica = YandexAppMetrica;
 //# sourceMappingURL=plugin.cjs.js.map

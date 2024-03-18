@@ -1,6 +1,6 @@
 import { WebPlugin } from '@capacitor/core';
-import type { ReportEventOptions, ReportRevenueOptions, YandexMetrikaPlugin } from './definitions';
-export declare class YandexMetrikaWeb extends WebPlugin implements YandexMetrikaPlugin {
+import type { ReportEventOptions, ReportRevenueOptions, YandexAppMetricaPlugin } from './definitions';
+export declare class YandexAppMetricaWeb extends WebPlugin implements YandexAppMetricaPlugin {
     reportEvent(options: ReportEventOptions): void;
     reportRevenue(options: ReportRevenueOptions): void;
     sendEventsBuffer(): void;

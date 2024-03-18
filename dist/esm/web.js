@@ -1,5 +1,5 @@
 import { WebPlugin } from '@capacitor/core';
-export class YandexMetrikaWeb extends WebPlugin {
+export class YandexAppMetricaWeb extends WebPlugin {
     reportEvent(options) {
         console.log('reportEvent', options);
         throw this.unimplemented('Not implemented on web.');

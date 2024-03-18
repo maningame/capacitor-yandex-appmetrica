@@ -1,6 +1,6 @@
-package com.maningame.capacitor.yandex.metrika;
+package com.maningame.capacitor.yandex.appmetrica;
 
-public class YandexMetrikaConfig {
+public class YandexAppMetricaConfig {
 
     private String apiKey = "";
 

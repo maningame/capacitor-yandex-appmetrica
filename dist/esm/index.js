@@ -1,7 +1,7 @@
 import { registerPlugin } from '@capacitor/core';
-const YandexMetrika = registerPlugin('YandexMetrika', {
-    web: () => import('./web').then(m => new m.YandexMetrikaWeb()),
+const YandexAppMetrica = registerPlugin('YandexAppMetrica', {
+    web: () => import('./web').then(m => new m.YandexAppMetricaWeb()),
 });
 export * from './definitions';
-export { YandexMetrika };
+export { YandexAppMetrica };
 //# sourceMappingURL=index.js.map
